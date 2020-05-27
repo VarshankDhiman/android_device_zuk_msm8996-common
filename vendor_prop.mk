@@ -148,7 +148,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sw_mbn_openmkt=1 \
     persist.radio.hw_mbn_update=1 \
     persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.process_sups_ind=1 \
     persist.radio.multisim.config=dsds \
@@ -166,11 +165,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.data_ltd_sys_ind=1 \
     persist.radio.multisim.config=dsds \
     persist.radio.apm_sim_not_pwdn=1 \
+    persist.radio.rat_on=combine \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_con_rprt=1 \
+    persist.radio.calls.on.ims=1 \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
+    persist.vendor.vt.supported=1 \
+    persist.vendor.sys.cnd.iwlan=1 \
     persist.radio.calls.on.ims=1 \
-    persist.dbg.ims_volte_enable=1
+    persist.dbg.ims_volte_enable=1 \
+    persist.radio.volte.dan_support=true \
+    persist.sys.cust.lte_config=true \
+    persist.rcs.supported=1 \
+    persist.radio.VT_ENABLE=1 \
+    persist.radio.VT_CAM_INTERFACE=2 \
+    persist.vendor.data.iwlan.enable=true
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
+
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -221,3 +236,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
+
+# IMS stuffs
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.sys.cnd.iwlan=1
+
