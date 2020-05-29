@@ -48,7 +48,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.video.ubwc=0 \
     persist.camera.gyro.disable=0 \
     ro.persist.qcapb=1 \
-    camera.disable_zsl_mode=1
+    camera.disable_zsl_mode=1 \
+    vendor.camera.hal1.packagelist=com.facebook.katana,com.facebook.orca,com.instagram.android,com.viber.voip
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
