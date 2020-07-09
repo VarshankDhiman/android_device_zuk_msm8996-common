@@ -28,8 +28,7 @@ $(call inherit-product, vendor/zuk/msm8996-common/msm8996-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -160,10 +159,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.wlan.sh \
     ueventd.qcom.rc
-
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
 
 # Display
 PRODUCT_PACKAGES += \
@@ -380,10 +375,6 @@ PRODUCT_BOOT_JARS += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.zuk_8996
 
 # Trust HAL
 PRODUCT_PACKAGES += \
