@@ -596,4 +596,7 @@
     <!-- whether the always on display mode is enabled by default. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- whether the liveDisplay is enabled by default. -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
 </resources>
