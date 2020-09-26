@@ -1,4 +1,4 @@
-\#
+#
 # Common vendor properties for msm8996
 #
 
