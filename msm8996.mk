@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8996 \
     mm-qcamera-app \
-    Snap \
+    Camera2 \
     libmm-qcamera \
     libfui
 
